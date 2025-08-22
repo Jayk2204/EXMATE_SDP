@@ -90,31 +90,36 @@ namespace WindowsFormsApp1
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
-            {
-                string query = "SELECT COUNT(*) FROM Users WHERE Username=@username AND Password=@password";
-                SqlCommand cmd = new SqlCommand(query, con);
+            //using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
+            //{
+            //    string query = "SELECT COUNT(*) FROM Users WHERE Username=@username AND Password=@password";
+            //    SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@username", txtusername.Text);
-                cmd.Parameters.AddWithValue("@password", txtpassword.Text);
+            //    cmd.Parameters.AddWithValue("@username", txtusername.Text);
+            //    cmd.Parameters.AddWithValue("@password", txtpassword.Text);
 
-                con.Open();
-                int count = (int)cmd.ExecuteScalar();
-                con.Close();
+            //    con.Open();
+            //    int count = (int)cmd.ExecuteScalar();
+            //    con.Close();
 
-                if (count > 0)
-                {
-                    MessageBox.Show("Login Successful!");
-                    // Open new form
-                    //Home home = new Home();
-                    //home.Show();
-                    //this.Hide();
+            //    if (count > 0)
+            //    {
+            //        MessageBox.Show("Login Successful!");
+            //        // Open new form
+            //        //Home home = new Home();
+            //        //home.Show();
+            //        //this.Hide();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Invalid Username or Password!");
                 }
-                else
-                {
-                    MessageBox.Show("Invalid Username or Password!");
-                }
-            }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    }
         }
     }
 }

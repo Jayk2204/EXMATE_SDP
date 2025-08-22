@@ -139,6 +139,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LoginDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\10009151.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\22885101.png" />
+    <None Include="Resources\newfile.png" />
+    <None Include="Resources\14237749.png" />
+    <None Include="Resources\pngtree-neon-blue-circle-banner-neon-circle-png-image_9211756.png" />
+    <None Include="Resources\file_000000002aa861f9a0f36e00ae9e2780%281%29.png" />
+    <None Include="Resources\1000915.png" />
+    <None Include="Resources\2288510.png" />
+    <None Include="Resources\file_00000000c59461f68e7c6b8068238704.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

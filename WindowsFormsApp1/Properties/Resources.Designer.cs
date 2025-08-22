@@ -63,6 +63,56 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000915 {
+            get {
+                object obj = ResourceManager.GetObject("1000915", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _10009151 {
+            get {
+                object obj = ResourceManager.GetObject("10009151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _14237749 {
+            get {
+                object obj = ResourceManager.GetObject("14237749", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2288510 {
+            get {
+                object obj = ResourceManager.GetObject("2288510", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _22885101 {
+            get {
+                object obj = ResourceManager.GetObject("22885101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _7153150 {
             get {
                 object obj = ResourceManager.GetObject("7153150", resourceCulture);
@@ -93,6 +143,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_000000002aa861f9a0f36e00ae9e2780_1_ {
+            get {
+                object obj = ResourceManager.GetObject("file_000000002aa861f9a0f36e00ae9e2780(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_00000000c59461f68e7c6b8068238704 {
+            get {
+                object obj = ResourceManager.GetObject("file_00000000c59461f68e7c6b8068238704", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_00000000cc8461f9b8755bfd9482eee5 {
             get {
                 object obj = ResourceManager.GetObject("file_00000000cc8461f9b8755bfd9482eee5", resourceCulture);
@@ -116,6 +186,36 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap icone_cercle_violet {
             get {
                 object obj = ResourceManager.GetObject("icone-cercle-violet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mail {
+            get {
+                object obj = ResourceManager.GetObject("mail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newfile {
+            get {
+                object obj = ResourceManager.GetObject("newfile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_neon_blue_circle_banner_neon_circle_png_image_9211756 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-neon-blue-circle-banner-neon-circle-png-image_9211756", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

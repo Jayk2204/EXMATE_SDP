@@ -79,20 +79,25 @@ namespace WindowsFormsApp1
 
         private void btnregister_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
-            {
-                string query = "INSERT INTO Users (Username, Password) VALUES (@username, @password)";
-                SqlCommand cmd = new SqlCommand(query, con);
+            //using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
+            //{
+            //    string query = "INSERT INTO Users (Username, Password) VALUES (@username, @password)";
+            //    SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue("@username", txtusername.Text);
-                cmd.Parameters.AddWithValue("@password", txtpassword.Text);
+            //    cmd.Parameters.AddWithValue("@username", txtusername.Text);
+            //    cmd.Parameters.AddWithValue("@password", txtpassword.Text);
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+            //    con.Open();
+            //    cmd.ExecuteNonQuery();
+            //    con.Close();
 
-                MessageBox.Show("Signup Successful!");
+            //    MessageBox.Show("Signup Successful!");
             }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
+    }
     }
 }

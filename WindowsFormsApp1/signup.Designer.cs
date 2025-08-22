@@ -44,14 +44,15 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.btnregister = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lblsignup = new System.Windows.Forms.Label();
             this.lbldonthaveacc = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxpassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxconfirmpass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblexmate
@@ -80,7 +81,9 @@
             // lblpassword
             // 
             this.lblpassword.AutoSize = true;
+            this.lblpassword.BackColor = System.Drawing.Color.Transparent;
             this.lblpassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblpassword.Location = new System.Drawing.Point(820, 436);
             this.lblpassword.Name = "lblpassword";
             this.lblpassword.Size = new System.Drawing.Size(89, 17);
@@ -90,7 +93,7 @@
             // picboxpassword
             // 
             this.picboxpassword.BackColor = System.Drawing.Color.Transparent;
-            this.picboxpassword.Image = global::WindowsFormsApp1.Properties.Resources._7781678;
+            this.picboxpassword.Image = global::WindowsFormsApp1.Properties.Resources._10009151;
             this.picboxpassword.Location = new System.Drawing.Point(784, 432);
             this.picboxpassword.Name = "picboxpassword";
             this.picboxpassword.Size = new System.Drawing.Size(37, 24);
@@ -101,7 +104,9 @@
             // lblusername
             // 
             this.lblusername.AutoSize = true;
+            this.lblusername.BackColor = System.Drawing.Color.Transparent;
             this.lblusername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblusername.Location = new System.Drawing.Point(821, 292);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(92, 17);
@@ -111,7 +116,7 @@
             // picboxuser
             // 
             this.picboxuser.BackColor = System.Drawing.Color.Transparent;
-            this.picboxuser.Image = global::WindowsFormsApp1.Properties.Resources._7153150;
+            this.picboxuser.Image = global::WindowsFormsApp1.Properties.Resources._22885101;
             this.picboxuser.Location = new System.Drawing.Point(784, 287);
             this.picboxuser.Name = "picboxuser";
             this.picboxuser.Size = new System.Drawing.Size(37, 24);
@@ -140,7 +145,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.gmail_logo_icon;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.mail;
             this.pictureBox1.Location = new System.Drawing.Point(785, 359);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 24);
@@ -151,7 +156,9 @@
             // lblemail
             // 
             this.lblemail.AutoSize = true;
+            this.lblemail.BackColor = System.Drawing.Color.Transparent;
             this.lblemail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblemail.Location = new System.Drawing.Point(821, 362);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(57, 17);
@@ -161,7 +168,9 @@
             // lblconfirmpass
             // 
             this.lblconfirmpass.AutoSize = true;
+            this.lblconfirmpass.BackColor = System.Drawing.Color.Transparent;
             this.lblconfirmpass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblconfirmpass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblconfirmpass.Location = new System.Drawing.Point(821, 509);
             this.lblconfirmpass.Name = "lblconfirmpass";
             this.lblconfirmpass.Size = new System.Drawing.Size(150, 17);
@@ -171,7 +180,7 @@
             // picboxconfirmpass
             // 
             this.picboxconfirmpass.BackColor = System.Drawing.Color.Transparent;
-            this.picboxconfirmpass.Image = global::WindowsFormsApp1.Properties.Resources._7781678;
+            this.picboxconfirmpass.Image = global::WindowsFormsApp1.Properties.Resources._10009151;
             this.picboxconfirmpass.Location = new System.Drawing.Point(786, 504);
             this.picboxconfirmpass.Name = "picboxconfirmpass";
             this.picboxconfirmpass.Size = new System.Drawing.Size(37, 24);
@@ -192,8 +201,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.icone_cercle_violet;
-            this.pictureBox2.Location = new System.Drawing.Point(896, 137);
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.pngtree_neon_blue_circle_banner_neon_circle_png_image_9211756;
+            this.pictureBox2.Location = new System.Drawing.Point(894, 134);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(107, 107);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +215,7 @@
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.BackColor = System.Drawing.Color.Transparent;
             this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkShowPassword.ForeColor = System.Drawing.Color.DarkBlue;
+            this.chkShowPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.chkShowPassword.Location = new System.Drawing.Point(1040, 570);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(111, 20);
@@ -217,7 +226,7 @@
             // 
             // btnregister
             // 
-            this.btnregister.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.WhatsApp_Image_2025_08_21_at_20_37_12_2061eda6;
+            this.btnregister.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.file_000000002aa861f9a0f36e00ae9e2780_1_;
             this.btnregister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnregister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregister.Location = new System.Drawing.Point(784, 621);
@@ -228,24 +237,13 @@
             this.btnregister.UseVisualStyleBackColor = true;
             this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Brown;
-            this.button2.Location = new System.Drawing.Point(1219, -10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 55);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // lblsignup
             // 
             this.lblsignup.AutoSize = true;
             this.lblsignup.BackColor = System.Drawing.Color.Transparent;
             this.lblsignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsignup.Location = new System.Drawing.Point(1036, 684);
+            this.lblsignup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblsignup.Location = new System.Drawing.Point(1026, 684);
             this.lblsignup.Name = "lblsignup";
             this.lblsignup.Size = new System.Drawing.Size(54, 22);
             this.lblsignup.TabIndex = 34;
@@ -257,22 +255,35 @@
             this.lbldonthaveacc.AutoSize = true;
             this.lbldonthaveacc.BackColor = System.Drawing.Color.Transparent;
             this.lbldonthaveacc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldonthaveacc.Location = new System.Drawing.Point(803, 684);
+            this.lbldonthaveacc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbldonthaveacc.Location = new System.Drawing.Point(815, 684);
             this.lbldonthaveacc.Name = "lbldonthaveacc";
             this.lbldonthaveacc.Size = new System.Drawing.Size(218, 22);
             this.lbldonthaveacc.TabIndex = 33;
             this.lbldonthaveacc.Text = "Already have an account?";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources._14237749;
+            this.pictureBox3.Location = new System.Drawing.Point(1245, 1);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 35;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.WhatsApp_Image_2025_08_21_at_21_13_20_7f4b5ff5;
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.newfile;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1286, 758);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblsignup);
             this.Controls.Add(this.lbldonthaveacc);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnregister);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.pictureBox2);
@@ -289,6 +300,7 @@
             this.Controls.Add(this.picboxuser);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.lblexmate);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "signup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -299,6 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxconfirmpass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,8 +335,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.Button btnregister;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblsignup;
         private System.Windows.Forms.Label lbldonthaveacc;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
