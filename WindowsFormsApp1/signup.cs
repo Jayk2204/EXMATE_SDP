@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -74,6 +75,24 @@ namespace WindowsFormsApp1
 
 
             this.Hide();
+        }
+
+        private void btnregister_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
+            {
+                string query = "INSERT INTO Users (Username, Password) VALUES (@username, @password)";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                cmd.Parameters.AddWithValue("@username", txtusername.Text);
+                cmd.Parameters.AddWithValue("@password", txtpassword.Text);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Signup Successful!");
+            }
         }
     }
 }

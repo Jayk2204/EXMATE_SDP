@@ -226,6 +226,7 @@
             this.btnregister.TabIndex = 31;
             this.btnregister.Text = "Register";
             this.btnregister.UseVisualStyleBackColor = true;
+            this.btnregister.Click += new System.EventHandler(this.btnregister_Click);
             // 
             // button2
             // 
