@@ -44,7 +44,16 @@ namespace WindowsFormsApp1
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is TextBox)
+                {
+                    TextBox txt = (TextBox)ctrl;
+                    txt.AutoSize = false;  // allow manual height
+                    txt.Height = 27;       // set height
+                    txt.Font = new Font("Segoe UI", 10); // optional for better look
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,6 +69,22 @@ namespace WindowsFormsApp1
            
             this.Hide();
 
+        }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked)
+            {
+                // Show passwords
+                txtpassword.UseSystemPasswordChar = false;
+                
+            }
+            else
+            {
+                // Hide passwords
+                txtpassword.UseSystemPasswordChar = true;
+           
+            }
         }
     }
 }

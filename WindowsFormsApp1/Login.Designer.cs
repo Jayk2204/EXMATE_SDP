@@ -33,8 +33,7 @@
             this.lblusername = new System.Windows.Forms.Label();
             this.picboxpassword = new System.Windows.Forms.PictureBox();
             this.lblpassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cbremeberme = new System.Windows.Forms.CheckBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
             this.lblforgetpass = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
             this.lblorconnect = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.lblexmate = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.lblsignup = new System.Windows.Forms.Label();
+            this.chkShowPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picboxuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxpassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picboxgoogle)).BeginInit();
@@ -102,27 +102,14 @@
             this.lblpassword.TabIndex = 5;
             this.lblpassword.Text = "Password :";
             // 
-            // textBox1
+            // txtpassword
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.textBox1.Location = new System.Drawing.Point(156, 370);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(359, 31);
-            this.textBox1.TabIndex = 6;
-            // 
-            // cbremeberme
-            // 
-            this.cbremeberme.AutoSize = true;
-            this.cbremeberme.BackColor = System.Drawing.Color.Transparent;
-            this.cbremeberme.Font = new System.Drawing.Font("Microsoft Tai Le", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbremeberme.ForeColor = System.Drawing.Color.DarkBlue;
-            this.cbremeberme.Location = new System.Drawing.Point(156, 414);
-            this.cbremeberme.Name = "cbremeberme";
-            this.cbremeberme.Size = new System.Drawing.Size(107, 20);
-            this.cbremeberme.TabIndex = 7;
-            this.cbremeberme.Text = "Remember me";
-            this.cbremeberme.UseVisualStyleBackColor = false;
+            this.txtpassword.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtpassword.Location = new System.Drawing.Point(156, 370);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(359, 22);
+            this.txtpassword.TabIndex = 6;
+            this.txtpassword.UseSystemPasswordChar = true;
             // 
             // lblforgetpass
             // 
@@ -223,12 +210,26 @@
             this.lblsignup.AutoSize = true;
             this.lblsignup.BackColor = System.Drawing.Color.Transparent;
             this.lblsignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsignup.Location = new System.Drawing.Point(419, 597);
+            this.lblsignup.Location = new System.Drawing.Point(407, 597);
             this.lblsignup.Name = "lblsignup";
             this.lblsignup.Size = new System.Drawing.Size(66, 22);
             this.lblsignup.TabIndex = 18;
             this.lblsignup.Text = "Signup\r\n";
             this.lblsignup.Click += new System.EventHandler(this.lblsignup_Click_1);
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.BackColor = System.Drawing.Color.Transparent;
+            this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkShowPassword.ForeColor = System.Drawing.Color.DarkBlue;
+            this.chkShowPassword.Location = new System.Drawing.Point(156, 414);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(111, 20);
+            this.chkShowPassword.TabIndex = 31;
+            this.chkShowPassword.Text = "Show password";
+            this.chkShowPassword.UseVisualStyleBackColor = false;
+            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // Login
             // 
@@ -238,6 +239,7 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.file_00000000cc8461f9b8755bfd9482eee5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1286, 758);
+            this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.lblsignup);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lblexmate);
@@ -247,8 +249,7 @@
             this.Controls.Add(this.lblorconnect);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.lblforgetpass);
-            this.Controls.Add(this.cbremeberme);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.picboxpassword);
             this.Controls.Add(this.lblusername);
@@ -276,8 +277,7 @@
         private System.Windows.Forms.Label lblusername;
         private System.Windows.Forms.PictureBox picboxpassword;
         private System.Windows.Forms.Label lblpassword;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox cbremeberme;
+        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Label lblforgetpass;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.Label lblorconnect;
@@ -287,6 +287,7 @@
         private System.Windows.Forms.Label lblexmate;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblsignup;
+        private System.Windows.Forms.CheckBox chkShowPassword;
     }
 }
 
