@@ -132,13 +132,6 @@
     <None Include="Resources\gmail-logo-icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LoginDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LoginDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>LoginDB.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\10009151.png" />
     <None Include="Resources\mail.png" />
     <None Include="Resources\22885101.png" />
