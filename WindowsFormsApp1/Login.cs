@@ -45,6 +45,7 @@ namespace WindowsFormsApp1
 
         private void Login_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Welcome");
             foreach (Control ctrl in this.Controls)
             {
                 if (ctrl is TextBox)
