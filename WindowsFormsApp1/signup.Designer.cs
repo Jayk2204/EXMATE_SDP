@@ -35,7 +35,7 @@
             this.lblusername = new System.Windows.Forms.Label();
             this.picboxuser = new System.Windows.Forms.PictureBox();
             this.txtusername = new System.Windows.Forms.TextBox();
-            this.txtboxemail = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblemail = new System.Windows.Forms.Label();
             this.lblconfirmpass = new System.Windows.Forms.Label();
@@ -133,14 +133,14 @@
             this.txtusername.Size = new System.Drawing.Size(367, 31);
             this.txtusername.TabIndex = 17;
             // 
-            // txtboxemail
+            // txtemail
             // 
-            this.txtboxemail.BackColor = System.Drawing.Color.LavenderBlush;
-            this.txtboxemail.Location = new System.Drawing.Point(784, 389);
-            this.txtboxemail.Multiline = true;
-            this.txtboxemail.Name = "txtboxemail";
-            this.txtboxemail.Size = new System.Drawing.Size(367, 29);
-            this.txtboxemail.TabIndex = 23;
+            this.txtemail.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtemail.Location = new System.Drawing.Point(784, 389);
+            this.txtemail.Multiline = true;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(367, 29);
+            this.txtemail.TabIndex = 23;
             // 
             // pictureBox1
             // 
@@ -292,7 +292,7 @@
             this.Controls.Add(this.lblconfirmpass);
             this.Controls.Add(this.lblemail);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtboxemail);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.picboxpassword);
@@ -326,7 +326,7 @@
         private System.Windows.Forms.Label lblusername;
         private System.Windows.Forms.PictureBox picboxuser;
         private System.Windows.Forms.TextBox txtusername;
-        private System.Windows.Forms.TextBox txtboxemail;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Label lblconfirmpass;

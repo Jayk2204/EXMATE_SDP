@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;   // ✅ For SQLite
+using System.Configuration; // ✅ For App.config connection string
 
 namespace WindowsFormsApp1
 {
-    public partial class Login: Form
+    public partial class Login : Form
     {
         public Login()
         {
@@ -35,12 +36,14 @@ namespace WindowsFormsApp1
 
         private void lblsignup_Click(object sender, EventArgs e)
         {
-           
+            signup signupForm = new signup();
+            signupForm.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            // (Optional, you can remove if unused)
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -67,60 +70,65 @@ namespace WindowsFormsApp1
         {
             signup signupForm = new signup();
             signupForm.Show();
-
-           
             this.Hide();
-
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             if (chkShowPassword.Checked)
             {
-                // Show passwords
                 txtpassword.UseSystemPasswordChar = false;
-                
             }
             else
             {
-                // Hide passwords
                 txtpassword.UseSystemPasswordChar = true;
-           
             }
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            //using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\LoginDB.mdf;Integrated Security=True"))
-            //{
-            //    string query = "SELECT COUNT(*) FROM Users WHERE Username=@username AND Password=@password";
-            //    SqlCommand cmd = new SqlCommand(query, con);
+            string connStr = ConfigurationManager.ConnectionStrings["SQLiteConn"].ConnectionString;
 
-            //    cmd.Parameters.AddWithValue("@username", txtusername.Text);
-            //    cmd.Parameters.AddWithValue("@password", txtpassword.Text);
+            using (SQLiteConnection conn = new SQLiteConnection(connStr))
+            {
+                try
+                {
+                    conn.Open();
 
-            //    con.Open();
-            //    int count = (int)cmd.ExecuteScalar();
-            //    con.Close();
+                    string query = "SELECT COUNT(*) FROM users WHERE username=@Username AND password=@Password";
+                    using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", txtusername.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Password", txtpassword.Text.Trim());
 
-            //    if (count > 0)
-            //    {
-            //        MessageBox.Show("Login Successful!");
-            //        // Open new form
-            //        //Home home = new Home();
-            //        //home.Show();
-            //        //this.Hide();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Invalid Username or Password!");
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            // TODO: Navigate to Dashboard/Home form
+                            // Example:
+                            // Dashboard dash = new Dashboard();
+                            // dash.Show();
+                            // this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
     }
-        
-    
 }
